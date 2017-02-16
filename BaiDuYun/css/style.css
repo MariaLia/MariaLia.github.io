@@ -1,0 +1,610 @@
+/*重置样式*/
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    font:16px "microsoft yahei";
+    background-color:#fff;
+}
+a{
+    color:#fff;
+    text-decoration:none;
+}
+i,b,em{
+    font-style:normal;
+}
+b,strong{
+    font-weight:normal;
+}
+li{
+    list-style:none;
+}
+input{
+    border:0;
+    outline:none;
+}
+.none{
+    display:none;
+}
+
+
+/*浮动+清除浮动*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.clearfix{
+    zoom:1;
+}
+
+/*背景图*/
+#baiduyun{
+    height:100%;
+    min-width:1200px;
+    position:relative;
+    background-image:url(../img/main_bg.jpg);
+}
+header{
+
+    padding-top:15px;
+    height:62px;
+    box-sizing: border-box;
+}
+header strong{
+    text-indent:-99999px;
+    width:142px;
+    height:32px;
+    margin:0 20px 15px;
+    background-image:url("../img/logo_01.png");
+}
+header .left{
+    padding-left:39px;
+}
+header .left li{
+    margin-right:54px;
+}
+header .left li a{
+    float:left;
+    line-height:30px;
+}
+header .left li a:hover{
+    border-bottom:3px solid #fff;
+}
+header .right li{
+    color:#fff;
+    font-size:12px;
+}
+header .right li:nth-child(1) a{
+    float:left;
+    color:gold;
+    padding-top:8px;
+    text-decoration:underline;
+    font-size:12px;
+    padding-right:10px;
+}
+header .right li:nth-child(2) img{
+    float:left;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    border:2px solid #3a7ad8;
+    margin-right:10px;
+}
+header .right li:nth-child(2) .mc{
+    float:left;
+    padding-top:8px;
+}
+header .right li:nth-child(2) .hy_icon{
+    float:left;
+    width:20px;
+    height:18px;
+    background:url("../img/hg_icon.jpg");
+    margin-top:4px;
+    margin-left:5px;
+    margin-right:10px;
+}
+header .right li:nth-child(2) .sj_icon{
+    float:left;
+    width:12px;
+    height:7px;
+    margin-top:12px;
+    margin-right:18px;
+    background-image:url("../img/sanj.jpg");
+}
+header .right li:nth-child(3){
+    border-left:1px solid #fff;
+    height:12px;
+    padding-left:15px;
+    margin-top:11px;
+}
+header .right li:nth-child(3) a{
+    font-size:12px;
+    line-height:12px;
+    float:left;
+    margin-top:-1px;
+    margin-right:18px;
+}
+header .right li:nth-child(4) a,header .right li:nth-child(5) a,header .right li:nth-child(6) a{
+    background-image:url("../img/tip_icon.jpg");
+    float:left;
+    width:22px;
+    height:18px;
+    margin-top:7px;
+}
+header .right li:nth-child(5) a{
+    background-position:-37px 0;
+    margin-left:15px;
+    margin-right:15px;
+}
+header .right li:nth-child(6) a{
+    background-position:-74px 0;
+    margin-right:20px;
+}
+header .right li:nth-child(7){
+    margin-top:3px;
+    margin-right:11px;
+}
+header .right li:nth-child(7) a{
+    float:left;
+    width:78px;
+    height:26px;
+    background-color:#ffd821;
+    color:#d18112;
+    line-height:26px;
+    text-align:center;
+    border-radius:20px;
+}
+
+/*侧边栏*/
+article{
+    height:600px;
+    min-height:600px;
+}
+article nav{
+    min-height:500px;
+    width:194px;
+    top: 62px;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    position: absolute;
+}
+
+nav .nav_list a:hover{
+    background-color:#77acff;
+}
+
+article nav a.nav{
+    float:left;
+    width:194px;
+    height:45px;
+    text-indent:54px;
+    line-height:45px;
+    font-size:14px;
+}
+article nav a:nth-child(1){
+    margin-top:10px;
+    background:url("../img/all_icon.png") no-repeat 24px 15px;
+}
+article nav a:nth-child(8){
+    background:url("../img/i_icon.png") no-repeat 24px 15px;
+}
+article nav a:nth-child(9){
+    background:url("../img/ll_icon.png") no-repeat 24px 15px;
+}
+article nav .nav_span1{
+    float:left;
+    height:8px;
+    width:155px;
+    background-color:#5ba3d6;
+    border-radius:4px;
+    left:20px;
+    position:absolute;
+    bottom:72px;
+}
+article nav .nav_span1 b{
+    float:left;
+    width:14%;
+    height:8px;
+    background-color:#92ef55;
+    border-radius:4px;
+}
+article nav .nav_span2{
+    font-size:12px;
+    color:#fff;
+    position:absolute;
+    bottom:48px;
+    left:20px;
+}
+article nav .nav_span2 a{
+    position:absolute;
+    width:40px;
+    height:20px;
+    background:#5ba3d6;
+    border-radius:10px;
+    text-align:center;
+    line-height:20px;
+    font-size:12px;
+    margin-left:26px;
+    margin-top:-2px
+}
+/*侧边栏底部横排小图标*/
+article nav .nav_icon{
+    position:absolute;
+    width:48px;
+    height:24px;
+    bottom:12px;
+    background:url("../img/bottom_icon_1.png") no-repeat;
+}
+article nav .nav_icon:nth-last-child(4){
+    left:2px;
+}
+article nav .nav_icon:nth-last-child(3){
+    left:50px;
+    background-position:-50px;
+}
+article nav .nav_icon:nth-last-child(2){
+    left:98px;
+    background-position:-98px;
+}
+
+article nav .nav_icon:nth-last-child(1){
+    left:146px;
+    background-position:-146px;
+}
+
+/*主要内容区域*/
+article section{
+    position:absolute;
+    background-color:#fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    top: 62px;
+    left: 194px;
+    bottom: 0;
+    right: 10px;
+    overflow: auto;
+}
+section .header{
+    padding-top:15px;
+    padding-left:15px;
+    padding-bottom:15px;
+}
+section .header .btn{
+    height:32px;
+    font-size:14px;
+    color:#3b8cff;
+    border:1px solid #c0d9fe;
+    border-radius:4px;
+    line-height:32px;
+    margin-right:10px;
+    text-align:center;
+    padding:0 14px;
+    cursor:pointer;
+    transition:.2s;
+}
+section ul.right li:nth-child(1){
+    width:244px;
+    height:32px;
+    background-color:#f1f2f4;
+    border-radius:16px;
+    margin-right:10px;
+    margin-top:1px;
+}
+section ul.right li:nth-child(1) input{
+    float:left;
+    margin-left:16px;
+    width:200px;
+    height:32px;
+    line-height:32px;
+    font-size:12px;
+    font-family: "Microsoft YaHei UI", serif;
+    color:#959595;
+    background-color:#f1f2f4;
+}
+section ul.right li:nth-child(1) span{
+    float:left;
+    width:14px;
+    height:14px;
+    margin-top:9px;
+    cursor:pointer;
+    background:url("../img/search.jpg") no-repeat;
+}
+section ul.right .sort{
+    background:url("../img/sort.jpg");
+    margin-top:8px;
+}
+section ul.right li:nth-child(2){
+    width:26px;
+    height:16px;
+    margin-right:12px;
+    cursor:pointer;
+}
+section ul.right li:nth-child(3){
+    width:20px;
+    height:16px;
+    background-position: -38px 0;
+    margin-right:23px;
+    cursor:pointer;
+}
+/*面包屑导航*/
+section div.txt{
+    font-size:12px;
+    padding-left:15px;
+    padding-right:20px;
+    height:20px;
+    margin-top:64px;
+    color:#666666;
+}
+section div a{
+    color:#666;
+    cursor:pointer
+}
+section div a:hover{
+    text-decoration:underline;
+}
+section div .blue{
+    color:#3b8cff;
+}
+/*全选按钮*/
+section .checkbox{
+    font-size:12px;
+    color:#929292;
+    padding-left:15px;
+    border-bottom:1px solid #f2f6fd;
+}
+section .checkbox p{
+    padding-bottom:9px;
+
+    padding-top:12px;
+}
+section .checkbox b{
+    width:14px;
+    height:14px;
+    background:url("../img/checkbox.png") no-repeat;
+    margin-right:14px;
+}
+section .checkbox span{
+    line-height:14px;
+}
+
+/*内容父级*/
+section .content,section .detailed{
+    position:relative;
+    height:auto;
+}
+
+/*详细内容*/
+section .checkbox .allcheck{
+    width:682px;
+}
+section .checkbox .size{
+    width:176px;
+    padding-left:10px;
+}
+section .checkbox .date{
+    width:250px;
+    padding-left:10px;
+}
+section .detailed .row{
+    border-bottom:1px solid #f2f6fd;
+    font-size:12px;
+    color:#424e67;
+    line-height:43px;
+}
+section .detailed .row p:nth-child(1){
+    width:697px;
+    height:43px;
+    box-sizing: border-box;
+    font-family: "serif";
+    background:url("../img/all_z.png") no-repeat -551px -407px;
+    position:relative;
+}
+section .detailed .row p:nth-child(1) .txt-name{
+    margin-left:51px;
+}
+section .detailed .row p:nth-child(1) b{
+    width:14px;
+    height:14px;
+    background:url("../img/checkbox.png") no-repeat;
+    margin-top:14px;
+    margin-left:16px;
+}
+section .detailed .row p:nth-child(2){
+    text-indent:8px;
+    font-size:12px;
+    color:#666;
+    width:186px;
+}
+section .detailed .row p:nth-child(3){
+    width:250px;
+    text-indent:8px;
+    color:#666;
+}
+/*详细信息——重命名*/
+section .detailed .rename{
+    position:absolute;
+    top:0;
+    left:80px;
+    z-index: 9;
+    padding-top:9px;
+    height:35px;
+    display:none;
+}
+section .detailed .rename input{
+    text-indent:4px;
+    font:12px/22px "microsoft yahei";
+    float:left;
+    width:230px;
+    height:22px;
+    border:1px solid #c4ddff;
+    box-shadow:0 0 4px #3b8cff;
+    border-radius:2px;
+}
+section .detailed .rename span{
+    float:left;
+    width:22px;
+    height:21px;
+    border:1px solid #c4dbfb;
+    box-shadow:0 0 3px #c2d9fb;
+    background:url("../img/judge.png") no-repeat;
+    cursor:pointer;
+}
+section .detailed .rename span:nth-child(3){
+    background-position: -30px 0;
+}
+
+/*内容——文件夹大图*/
+section .content dl{
+    float:left;
+    width:122px;
+    height:129px;
+    margin:3px 0 3px 6px;
+    box-sizing: border-box;
+    border:1px solid transparent;
+    position:relative;
+}
+section .content dt{
+    width:122px;
+    height:56px;
+    margin-top:24px;
+    background:url("../img/Folder.png") no-repeat 32px 0;
+}
+section .content dd:nth-child(2){
+    font-size:12px;
+    line-height:38px;
+    text-align:center;
+    margin-top:9px;
+    margin-left:10px;
+    width:100px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+section .content dd a{
+    color:#536475;
+}
+
+/*重命名输入框-大图*/
+section .content .bigrename{
+    display:none;
+    position:absolute;
+    top:3px;
+    left:6px;
+    z-index: 9;
+    width:122px;
+    height:129px;
+}
+section .content .bigrename p{
+    position:absolute;
+    bottom:6px;
+    left:-4px;
+    width:139px;
+    background:#F1F5FA;
+}
+section .content .bigrename input{
+    text-indent:4px;
+    font:12px/22px "microsoft yahei";
+    float:left;
+    width:83px;
+    height:22px;
+    border:1px solid #c4ddff;
+    box-shadow:0 0 4px #3b8cff;
+    border-radius:2px;
+}
+section .content .bigrename span{
+    float:left;
+    width:22px;
+    height:21px;
+    border:1px solid #c4dbfb;
+    box-shadow:0 0 3px #c2d9fb;
+    background:url("../img/judge.png") no-repeat;
+    cursor:pointer;
+}
+section .true{
+    margin-left:4px;
+    margin-right:2px;
+}
+section .content .bigrename .false{
+    background-position:-30px 0;
+}
+
+/*文件夹大图——鼠标经过样式*/
+section .content dl.hover{
+    background-color:#f1f5fa;
+    border:1px solid #f1f5fa;
+    border-radius:6px;
+}
+
+section .content dl dd:nth-child(3){
+    display:none;
+    width:19px;
+    height:19px;
+    position:absolute;
+    top:6px;
+    left:6px;
+    background-image:url("../img/checker.png");
+    /*点击时图片地址*/
+    /*background-image:url("../img/checker0.png");*/
+}
+/*文件夹大图——鼠标点击样式*/
+section .content dl.click{
+    background-color:#f1f5fa;
+    border:1px solid #90c3fd;
+    border-radius:6px;
+}
+
+/*右键菜单*/
+section .content-menu,section .file-menu{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -999999;
+    font-size:14px;
+    color:#666666;
+    box-shadow:0 0 10px #d7d7d7;
+    border-radius:5px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background:#fff;
+}
+section .content-menu li,section .file-menu li{
+    padding:0 25px 0 20px;
+    line-height:30px;
+    cursor: default;
+    white-space: nowrap;
+}
+
+section .content-menu li:hover,section .file-menu li:hover{
+    background:#4281F4;
+    color:#fff;
+}
+
+/*鼠标框选*/
+#area{
+    background:dodgerblue;
+    border:1px solid blue;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    display:none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaiDuYun</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+    <div id="baiduyun">
+        <header class="clearfix">
+            <strong class="fl">百度网盘</strong>
+            <ul class="fl left">
+                <li class="fl"><a href="javascript:void(0)">网盘</a></li>
+                <li class="fl"><a href="javascript:void(0)">分享</a></li>
+                <li class="fl"><a href="javascript:void(0)">更多</a></li>
+            </ul>
+            <ul class="fr right">
+                <li class="fl"><a href="javascript:void(0)" title="超级会员 限时优惠">超级会员 限时优惠</a> </li>
+                <li class="fl"><img src="img/fb.jpg"/> <span class="mc">lori2368</span>
+                    <span class="hy_icon"></span><i class="sj_icon"></i></li>
+                <li class="fl"><a href="javascript:void(0)">客户端下载</a></li>
+                <li class="fl"><a href="javascript:void(0)"></a></li>
+                <li class="fl"><a href="javascript:void(0)"></a></li>
+                <li class="fl"><a href="javascript:void(0)"></a></li>
+                <li class="fl"><a href="javascript:void(0)">会员中心</a></li>
+            </ul>
+        </header>
+        <article class="clearfix">
+            <nav class="fl">
+                <div class="nav_list">
+                    <a class="nav" href="javascript:void(0)">全部文件</a>
+                    <a class="nav" href="javascript:void(0)">图片</a>
+                    <a class="nav" href="javascript:void(0)">文档</a>
+                    <a class="nav" href="javascript:void(0)">视频</a>
+                    <a class="nav" href="javascript:void(0)">种子</a>
+                    <a class="nav" href="javascript:void(0)">音乐</a>
+                    <a class="nav" href="javascript:void(0)">其它</a>
+                    <a class="nav" href="javascript:void(0)">我的分享</a>
+                    <a class="nav" href="javascript:void(0)">回收站</a>
+                </div>
+                <span class="nav_span1"><b></b></span>
+                <span class="nav_span2">306.78G/2155G<a href="javascript:void(0)">扩容</a></span>
+                <a class="nav_icon" href="javascript:void(0)"></a>
+                <a class="nav_icon" href="javascript:void(0)"></a>
+                <a class="nav_icon" href="javascript:void(0)"></a>
+                <a class="nav_icon" href="javascript:void(0)"></a>
+            </nav>
+            <section class="clearfix">
+                <ul class="header fl">
+                    <li class="btn new fl">新建文件夹</li>
+                    <li class="btn delete fl">删除</li>
+                    <li class="btn rename fl">重命名</li>
+                </ul>
+                <ul class="header fr right">
+                    <li class="fl"><input type="text" placeholder="搜索您的文件"/><span class="search"></span></li>
+                    <li class="fl sort"></li>
+                    <li class="fl sort"></li>
+                </ul>
+                <div class="txt clearfix">
+                    <p class="fl">
+                        <!--<a class="blue">返回上一级</a>
+                        <span class="blue"> | </span>
+                        <a class="blue">全部文件</a>
+                        <span> &gt; </span>-->
+                        <span>全部文件</span>
+                    </p>
+                    <p class="fr"><span>已全部加载，共22个</span></p>
+                </div>
+
+                <!--全选_大图-->
+                <div class="checkbox clearfix">
+                    <p class="fl">
+                        <b class="fl"></b><span class="fl">全选</span>
+                    </p>
+                </div>
+
+                <!--主要内容-->
+                <div class="content clearfix">
+
+                    <!--重命名弹窗-->
+                    <div class="bigrename">
+                        <p>
+                            <input type="text" value=""/><span class="true"></span><span class="false"></span>
+                        </p>
+                    </div>
+
+                    <!--文件夹-->
+                    <!--
+                    <dl>
+                        <dt></dt>
+                        <dd><a href="javascript:void(0)">字体</a></dd>
+                        <dd></dd>
+                    </dl>
+                    -->
+
+                </div>
+
+
+                <!--全选_详细-->
+                <div id="detail-check" class="checkbox clearfix none">
+                    <p class="fl allcheck">
+                        <b class="fl"></b><span class="fl">文件名</span>
+                    </p>
+                    <p class="fl size">
+                        <span class="fl">大小</span>
+                    </p>
+                    <p class="fl date">
+                        <span class="fl">修改日期</span>
+                    </p>
+                </div>
+
+
+                <!--详细内容-->
+                <div id="detail-content" class="detailed none">
+
+                    <!--重命名弹窗-->
+                    <p class="fl rename">
+                        <input type="text" value=""/><span class="true"></span><span class="false"></span>
+                    </p>
+
+                    <!--文件夹-->
+                    <div class="row clearfix">
+                        <p class="fl">
+                            <b class="fl"></b><span class="fl txt-name">字体</span>
+                        </p>
+                        <p class="fl">136.1M</p>
+                        <p class="fl">2016-09-02 23:21</p>
+                    </div>
+                </div>
+
+                <!--右键菜单-->
+                <ul class="content-menu">
+                    <li>新建文件夹</li>
+                    <li>刷新</li>
+                    <li>后退</li>
+                </ul>
+
+                <!--文件夹右键菜单-->
+                <ul class="file-menu">
+                    <li>打开</li>
+                    <li>重命名</li>
+                    <li>删除</li>
+                </ul>
+
+                <!--框选-->
+                <div id="area"></div>
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>
