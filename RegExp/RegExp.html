@@ -1,0 +1,173 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>正则表达式</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="1p438c9gabrrh106ggq5bfdt2l">正则表达式</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="RegExp_files/images/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.jpg"></div>
+<h2 class="topic">
+<a name="1kuvfnv78u87p58u8i2tbjoruv">用来操作字符串（擅长匹配模糊范围）</a>
+</h2>
+<h3 class="topic">
+<a name="20aebisl52k9nm3r3tii89gd4u">&nbsp;处理起来更高效</a>
+</h3>
+<h3 class="topic">
+<a name="3m8dr0nupa4saf6b5500staerd">&nbsp;维护不方便，可读性不高</a>
+</h3>
+<h2 class="topic">
+<a name="5loeeifn30o63f39njo7i5knm5">两种写法</a>
+</h2>
+<h3 class="topic">
+<a name="3ujrekj2q67r2f41nival7c0pq">&nbsp;标准：new RegExp(规则，修饰符)</a>
+</h3>
+<h3 class="topic">
+<a name="1016ib8dgcofag5b96uej4uvcc">&nbsp;简写：/规则/</a>
+</h3>
+<h3 class="topic">
+<a name="0kbo4cgga40jvq81q45qjjuesg">&nbsp;&nbsp;性能比标准的好</a>
+</h3>
+<h2 class="topic">
+<a name="5aj7e484idscghm6tjl8g87v7b">  \  转义符</a>
+</h2>
+<h3 class="topic">
+<a name="74fh3uca04j21ebe589hhn8qb7">&nbsp;\d  代表一个数字；  \D  代表一个非数字；</a>
+</h3>
+<h3 class="topic">
+<a name="51f8hs6sgmb9doeauoo07cca28">&nbsp;\w  代表一个字符（数字，字母，下划线）；  \W  代表非字符</a>
+</h3>
+<h3 class="topic">
+<a name="7tq9u7rnk1rpcp0mluf72n1qao">&nbsp;\s  代表空格；  \S代表非空格</a>
+</h3>
+<h3 class="topic">
+<a name="1psnp72vph06knktqus566h6jk">&nbsp;\b  边界符</a>
+</h3>
+<h3 class="topic">
+<a name="0n2elpttr8vv87n934jf51c62a">&nbsp;&nbsp;不适用中文</a>
+</h3>
+<h3 class="topic">
+<a name="6tglm1dc3bsb9aodnksftqtph8">&nbsp;  .  代表任意字符除了\n</a>
+</h3>
+<h2 class="topic">
+<a name="7ng15mebos6ectfalce0gkgccn">修饰符</a>
+</h2>
+<h3 class="topic">
+<a name="6446hnst4p5k1lov5tupu05cbr">&nbsp;   i   忽略大小写</a>
+</h3>
+<h3 class="topic">
+<a name="223elog3lmsmeaqtsfnic0bulb">&nbsp;   g   查找全局</a>
+</h3>
+<h2 class="topic">
+<a name="60q896agb7boiasbi83otf42ne">正则.test( str );</a>
+</h2>
+<h3 class="topic">
+<a name="02tnro6a6gcrn6us85lvdr43p2">&nbsp;检测正则匹配的内容</a>
+</h3>
+<h3 class="topic">
+<a name="6av9rf5qb2hrv2f843prj248qe">&nbsp;如果匹配到内容 返回  true  反之  false</a>
+</h3>
+<h3 class="topic">
+<a name="33e8br5514httmjct8kk0oifku">&nbsp;例子：console.log(/\d/.test(str))</a>
+</h3>
+<h2 class="topic">
+<a name="2to7lir0u9qo07g80mj0i1ga6d">str.match(正则);</a>
+</h2>
+<h3 class="topic">
+<a name="1jihf59fg5023t84tdudvqo4pn">&nbsp;如果匹配成功将匹配到的字符放到一个数组中，匹配不成功返回null;</a>
+</h3>
+<h3 class="topic">
+<a name="35347jan29o01aa6curaq9dt04">&nbsp;当匹配到一个字符时，会显示多个属性</a>
+</h3>
+<h3 class="topic">
+<a name="43rkourdjn7ko102n2u9526ljs">&nbsp;&nbsp;index: 匹配字符的位置</a>
+</h3>
+<h3 class="topic">
+<a name="0neap5b0mega2rkp0c13jijldp">&nbsp;&nbsp;input: 所有内容</a>
+</h3>
+<h3 class="topic">
+<a name="623q7bm85aeiooko79u2vdmhno">&nbsp;&nbsp;而length为1</a>
+</h3>
+<h2 class="topic">
+<a name="54033f6ctr9d5b5cs6912obm8o">str.search(字符串||正则);</a>
+</h2>
+<h3 class="topic">
+<a name="017h4mit412kfeslti6olje4uc">&nbsp;找到匹配的字符位置（可以指定也可以正则匹配）</a>
+</h3>
+<h3 class="topic">
+<a name="114gfbdggv87ggtjva4a4okna1">&nbsp;如果找不到返回值 = -1；</a>
+</h3>
+<h2 class="topic">
+<a name="3mfkduov6t3j4b5args9bv834i">str.replace( 要替换谁 || 可以用正则 , 替换成什么 || 函数 );</a>
+</h2>
+<h3 class="topic">
+<a name="047rok44v9j68l8on1soglpheo">&nbsp;返回值为替换好的字符串</a>
+</h3>
+<h3 class="topic">
+<a name="7tdt977mhfu4g8p9lvibsui156">&nbsp;   |   或者 </a>
+</h3>
+<h3 class="topic">
+<a name="5b3848082v3m18tm6d2injve8h">&nbsp;如果使用函数，那么一定要有return,不然为undefind</a>
+</h3>
+<h3 class="topic">
+<a name="6o4kplcd8espub2sqpi14m0khf">&nbsp;一般情况下&#13;
+			&#13;
+	函数内的第一个参数是当前匹配到的字符。&#13;
+			&#13;
+	函数内的第二个参数是当前匹配到的字符的索引值。&#13;
+		&#13;
+	函数内的第三个参数是当前总的字符串。&#13;
+			&#13;
+	函数内的第四个以后参数都为undefined。</a>
+</h3>
+<h2 class="topic">
+<a name="16ota9ve2veek94shmh4v05cdl">子项</a>
+</h2>
+<h3 class="topic">
+<a name="4l3pdba5o1tlejsg1dgilv8p06">&nbsp;如果正则中有子项，从函数的第一个参数之后就是匹配到的子项值，当参数的个数等于子项个数+1的时候，之后都为正常模式下的参数了(比如：索引，整个符，undefined..)</a>
+</h3>
+<h3 class="topic">
+<a name="58q9bpe6oki0m87imc883n6uhc">&nbsp;\1  子项重定向 （重复\number前面一个字符）</a>
+</h3>
+<h3 class="topic">
+<a name="7h3da5ggjqf98fe9f5ek0gdfop">&nbsp;当有子项的时候，如果在子项的后面加个\+数字，这个\+数字的意思就是重复一次前面子项中的字符，这个\+数字就叫子项重定向子项重定向可以在后面加量词</a>
+</h3>
+<h2 class="topic">
+<a name="7n9rq26jm7f4ucllldvtlf74im">( ) : 提权</a>
+</h2>
+<h2 class="topic">
+<a name="4nrgrmjtl436bc34f3doi3p3mh">[ ] : 在中括号里任意选择一个字符。</a>
+</h2>
+<h3 class="topic">
+<a name="3dghi9nh8qvh9f3r0b989e94pq">&nbsp;[^a]  排除a</a>
+</h3>
+<h3 class="topic">
+<a name="6odf4e6lt4prfgrguqa7drhod7">&nbsp;在中括号中 + ^ = 排除中括号中的内容。</a>
+</h3>
+<h3 class="topic">
+<a name="5dqpn537b9r7c11bd91buk5g4c">&nbsp;如果把^放到正则开始的位置，代表开头   结束$     /^ab$/</a>
+</h3>
+<h3 class="topic">
+<a name="4n1a503d67f3ku8qa1q7jfpui6">&nbsp;[\u4e00-\u9fa5] ; 中文的范围</a>
+</h3>
+<h2 class="topic">
+<a name="2jlpsso029421gjki5kbu1qhgj">{ } 量词的范围</a>
+</h2>
+<h3 class="topic">
+<a name="0q8hr2uqt83nf80irvlkr0diba">&nbsp;  {0,1}  ？  最小可以没有最大1个：</a>
+</h3>
+<h3 class="topic">
+<a name="45838n70ah8pfo295239lsrrru">&nbsp;  {0，}  *  最小没有，最大无限  </a>
+</h3>
+<h3 class="topic">
+<a name="0tcp3fhg7br6v7ps2vnvhor27p">&nbsp;  {1，}  +  最小1个最大无限  </a>
+</h3>
+<h3 class="topic">
+<a name="7q1kvtuql0jfelreqmot7l0mt0">&nbsp;  {n}  固定的次数</a>
+</h3>
+</body>
+</html>
